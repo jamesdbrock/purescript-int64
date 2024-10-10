@@ -1,0 +1,27 @@
+package:
+  name: int64
+  publish:
+    license: MIT
+    version: 3.0.0
+    location:
+      githubOwner: purescript-contrib
+      githubRepo: purescript-int64
+  dependencies:
+    - effect
+    - foreign
+    - functions
+    - gen
+    - integers
+    - maybe
+    - nullable
+    - prelude
+    - unsafe-coerce
+  test:
+    main: Test.Main
+    dependencies:
+      - console
+      - effect
+workspace:
+  extraPackages: {}
+  packageSet:
+    registry: 60.5.0

@@ -1,4 +1,4 @@
-module Data.Long.TestUtils
+module Test.Data.Long.TestUtils
   ( i2lS
   , i2lU
   , unsafeS2lS

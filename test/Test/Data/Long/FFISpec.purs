@@ -1,4 +1,4 @@
-module Data.Long.FFISpec
+module Test.Data.Long.FFISpec
   ( ffiSpec
   ) where
 

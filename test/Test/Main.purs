@@ -10,7 +10,6 @@ import Data.Maybe (Maybe(..))
 import Data.UInt64 (UInt64)
 import Data.UInt64 as UInt64
 import Effect (Effect)
-import Effect.Aff (launchAff_)
 import Test.Spec (describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter (consoleReporter)

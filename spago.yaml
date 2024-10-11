@@ -19,8 +19,16 @@ package:
   test:
     main: Test.Main
     dependencies:
-      - console
+      - aff
+      - arrays
+      - assert
       - effect
+      - foldable-traversable
+      - numbers
+      - quickcheck
+      - quickcheck-laws
+      - spec
+      - spec-node
 workspace:
   extraPackages: {}
   packageSet:

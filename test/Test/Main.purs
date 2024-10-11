@@ -4,8 +4,8 @@ import Prelude
 
 import Data.Int64 (Int64)
 import Data.Int64 as Int64
-import Data.Long.FFISpec (ffiSpec)
-import Data.Long.InternalSpec (internalSpec)
+import Test.Data.Long.FFISpec (ffiSpec)
+import Test.Data.Long.InternalSpec (internalSpec)
 import Data.Maybe (Maybe(..))
 import Data.UInt64 (UInt64)
 import Data.UInt64 as UInt64
@@ -14,10 +14,10 @@ import Effect.Aff (launchAff_)
 import Test.Spec (describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter (consoleReporter)
-import Test.Spec.Runner (runSpec)
+import Test.Spec.Runner.Node (runSpecAndExitProcess)
 
 main :: Effect Unit
-main = launchAff_ $ runSpec [ consoleReporter ] do
+main = runSpecAndExitProcess [ consoleReporter ] do
   ffiSpec
   internalSpec
   describe "Examples" do

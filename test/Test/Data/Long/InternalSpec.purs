@@ -1,4 +1,4 @@
-module Data.Long.InternalSpec
+module Test.Data.Long.InternalSpec
   ( internalSpec
   ) where
 

@@ -1,4 +1,4 @@
-module Data.Long.FFISpec
+module Test.Data.Long.FFISpec
   ( ffiSpec
   ) where
 
@@ -9,7 +9,7 @@ import Data.Function.Uncurried (runFn2, runFn3)
 import Data.Int (decimal)
 import Data.Int64.Internal (Long)
 import Data.Int64.Internal as Internal
-import Data.Long.TestUtils (i2lS, i2lU, isBigEndianV, isLittleEndianV, isSignedV, isUnsignedV, unsafeS2lS, unsafeS2lU)
+import Test.Data.Long.TestUtils (i2lS, i2lU, isBigEndianV, isLittleEndianV, isSignedV, isUnsignedV, unsafeS2lS, unsafeS2lU)
 import Effect.Class (liftEffect)
 import Effect.Uncurried (runEffectFn3)
 import Foreign (unsafeToForeign)
